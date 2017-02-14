@@ -1,10 +1,12 @@
 #ifndef SHIP_HPP
 #define SHIP_HPP
 
+#include <iostream>
 #include <QWidget>
 #include <QGraphicsItem>
 #include <QPainter>
 #include <QKeyEvent>
+#include <QGraphicsView>
 
 
 /**
@@ -32,6 +34,9 @@ public:
 
     void keyPressEvent(QKeyEvent *event);
     void focusOutEvent(QFocusEvent *event);
+
+private:
+    int width, height;
 };
 
 #endif // SHIP_HPP
